@@ -1,0 +1,338 @@
+"player","team","pos","min","obpm","dbpm","bpm","role"
+"Darwin Núñez","Liverpool","FW",22.7,0.333,0.023,0.356,3
+"Mohamed Salah","Liverpool","FW",28.2,0.288,0.022,0.31,3
+"Erling Haaland","Manchester City","FW",28.4,0.271,0.037,0.307,3
+"Bukayo Saka","Arsenal","FW",32.4,0.216,0.083,0.299,3
+"Emiliano Martínez","Aston Villa","GK",33.5,0.021,0.25,0.271,0
+"Mark Flekken","Brentford","GK",36.5,0.021,0.244,0.265,0
+"Ederson","Manchester City","GK",30.9,0.006,0.258,0.264,0
+"Ollie Watkins","Aston Villa","FW",35.7,0.249,0.015,0.264,3
+"Phil Foden","Manchester City","FW,MF",31.7,0.2,0.049,0.249,2.66666666666667
+"Luis Díaz","Liverpool","FW",29.2,0.225,0.024,0.249,3
+"Virgil van Dijk","Liverpool","DF",35.3,0.086,0.162,0.248,1
+"Lewis Dunk","Brighton & Hove Albion","DF",31.9,0.062,0.186,0.247,1
+"Wes Foderingham","Sheffield United","GK",29.4,0.002,0.239,0.241,0
+"Dominic Solanke","Bournemouth","FW",36.9,0.214,0.025,0.239,3
+"Kai Havertz","Arsenal","MF,FW",29.3,0.166,0.072,0.238,2.33333333333333
+"David Raya","Arsenal","GK",32,-0.017,0.251,0.234,0
+"Gabriel Martinelli","Arsenal","FW",22.4,0.184,0.048,0.232,3
+"Bart Verbruggen","Brighton & Hove Albion","GK",21,-0.013,0.244,0.232,0
+"Jeremy Doku","Manchester City","FW,MF",17.7,0.229,0.001,0.229,2.66666666666667
+"Alexander Isak","Newcastle United","FW",25.1,0.232,-0.006,0.226,3
+"Alisson","Liverpool","GK",28,-0.002,0.227,0.225,0
+"Guglielmo Vicario","Tottenham Hotspur","GK",38,0.001,0.222,0.223,0
+"Gabriel Jesus","Arsenal","FW",16.4,0.199,0.02,0.219,3
+"Đorđe Petrović","Chelsea","GK",22.1,-0.004,0.222,0.218,0
+"Nicolas Jackson","Chelsea","FW",31.1,0.214,0.003,0.217,3
+"Alejandro Garnacho","Manchester United","FW",28.5,0.242,-0.025,0.217,3
+"Julián Álvarez","Manchester City","MF,FW",29.4,0.173,0.043,0.216,2.33333333333333
+"Fabian Schär","Newcastle United","DF",33.9,0.07,0.144,0.215,1
+"Gabriel Magalhães","Arsenal","DF",33.8,0.023,0.191,0.213,1
+"Cole Palmer","Chelsea","FW,MF",29,0.203,0.009,0.212,2.66666666666667
+"André Onana","Manchester United","GK",38,-0.002,0.213,0.211,0
+"Neto","Bournemouth","GK",32,-0.008,0.219,0.211,0
+"Bernd Leno","Fulham","GK",38,-0.009,0.219,0.21,0
+"Thiago Silva","Chelsea","DF",28.1,0.055,0.149,0.204,1
+"Leandro Trossard","Arsenal","FW,MF",18.3,0.169,0.03,0.2,2.66666666666667
+"Matt Turner","Nottingham Forest","GK",17,-0.015,0.21,0.195,0
+"João Pedro","Brighton & Hove Albion","FW,MF",22.7,0.201,-0.008,0.193,2.66666666666667
+"James Trafford","Burnley","GK",28,-0.041,0.235,0.193,0
+"Chris Wood","Nottingham Forest","FW",20.1,0.182,0.009,0.191,3
+"Cody Gakpo","Liverpool","FW,MF",18.3,0.183,0.007,0.19,2.66666666666667
+"Robert Sánchez","Chelsea","GK",15.9,-0.02,0.206,0.186,0
+"Son Heung-min","Tottenham Hotspur","FW",32.6,0.2,-0.016,0.184,3
+"Richarlison","Tottenham Hotspur","FW",16.6,0.227,-0.043,0.184,3
+"Anthony Elanga","Nottingham Forest","FW,MF",27,0.152,0.032,0.183,2.66666666666667
+"Anthony Gordon","Newcastle United","FW",32.1,0.175,0.006,0.181,3
+"Martin Ødegaard","Arsenal","MF",34.3,0.1,0.08,0.18,2
+"Jordan Pickford","Everton","GK",38,-0.009,0.189,0.18,0
+"Murillo","Nottingham Forest","DF",31,0.035,0.146,0.18,1
+"Rodrigo Muniz","Fulham","FW",17.7,0.227,-0.049,0.178,3
+"Jason Steele","Brighton & Hove Albion","GK",17,-0.034,0.211,0.177,0
+"Thomas Kaminski","Luton Town","GK",37.8,-0.009,0.184,0.175,0
+"Raheem Sterling","Chelsea","FW,MF",22,0.193,-0.021,0.173,2.66666666666667
+"Antoine Semenyo","Bournemouth","FW",23.4,0.184,-0.01,0.173,3
+"José Sá","Wolverhampton Wanderers","GK",33.7,-0.037,0.206,0.169,0
+"Martin Dúbravka","Newcastle United","GK",22.1,-0.007,0.171,0.165,0
+"Jarrod Bowen","West Ham United","FW",33.5,0.187,-0.022,0.165,3
+"Eberechi Eze","Crystal Palace","MF,FW",22.8,0.172,-0.007,0.165,2.33333333333333
+"James Tarkowski","Everton","DF",38,0.025,0.136,0.162,1
+"Rodri","Manchester City","MF",32.6,0.06,0.101,0.161,2
+"Declan Rice","Arsenal","MF",35.8,0.044,0.112,0.156,2
+"Jan Paul van Hecke","Brighton & Hove Albion","DF",26.3,0.004,0.152,0.156,1
+"Nathan Collins","Brentford","DF",29.5,0.015,0.14,0.155,1
+"Dan Burn","Newcastle United","DF",30.3,0.055,0.098,0.154,1
+"Yoane Wissa","Brentford","FW",27.7,0.156,-0.004,0.153,3
+"Simon Adingra","Brighton & Hove Albion","FW",24.7,0.153,-0.001,0.152,3
+"Matheus Cunha","Wolverhampton Wanderers","FW,MF",27.1,0.164,-0.014,0.15,2.66666666666667
+"Ethan Pinnock","Brentford","DF",28,0.026,0.124,0.15,1
+"Dominic Calvert-Lewin","Everton","FW",24.1,0.17,-0.02,0.149,3
+"Morgan Gibbs-White","Nottingham Forest","MF,FW",35.1,0.099,0.049,0.149,2.33333333333333
+"Moussa Diaby","Aston Villa","FW,MF",24.2,0.158,-0.01,0.148,2.66666666666667
+"Diogo Jota","Liverpool","FW",12.7,0.191,-0.044,0.146,3
+"Dejan Kulusevski","Tottenham Hotspur","FW,MF",30.7,0.155,-0.008,0.146,2.66666666666667
+"Craig Dawson","Wolverhampton Wanderers","DF",24.5,0.027,0.118,0.145,1
+"William Saliba","Arsenal","DF",38,-0.008,0.15,0.142,1
+"Bruno Fernandes","Manchester United","MF,FW",34.6,0.123,0.019,0.142,2.33333333333333
+"Jack Robinson","Sheffield United","DF",32.1,0.032,0.107,0.139,1
+"Anel Ahmedhodžić","Sheffield United","DF",29.4,0.036,0.102,0.138,1
+"Alphonse Areola","West Ham United","GK",30,-0.013,0.15,0.137,0
+"Max Kilman","Wolverhampton Wanderers","DF",38,0.009,0.128,0.137,1
+"Justin Kluivert","Bournemouth","MF,FW",21.3,0.151,-0.018,0.133,2.33333333333333
+"Leon Bailey","Aston Villa","MF,FW",23,0.146,-0.013,0.132,2.33333333333333
+"Casemiro","Manchester United","MF,DF",22,0.047,0.083,0.131,1.66666666666667
+"Willy Boly","Nottingham Forest","DF",16,0.025,0.106,0.131,1
+"Dara O'Shea","Burnley","DF",32.1,0.02,0.11,0.13,1
+"Ezri Konsa","Aston Villa","DF",34.1,0.03,0.099,0.129,1
+"Cristian Romero","Tottenham Hotspur","DF",31,0.024,0.105,0.129,1
+"Illia Zabarnyi","Bournemouth","DF",37,-0.005,0.134,0.129,1
+"Ben White","Arsenal","DF",33.2,-0.006,0.133,0.127,1
+"Axel Disasi","Chelsea","DF",28.7,0.025,0.101,0.126,1
+"Bruno Guimarães","Newcastle United","MF",36.3,0.074,0.051,0.125,2
+"Sean Longstaff","Newcastle United","MF",30.5,0.099,0.025,0.125,2
+"Callum Hudson-Odoi","Nottingham Forest","FW,MF",20.6,0.111,0.013,0.124,2.66666666666667
+"Auston Trusty","Sheffield United","DF",28.6,0.025,0.099,0.124,1
+"Sven Botman","Newcastle United","DF",15.3,0.016,0.107,0.123,1
+"Diego Carlos","Aston Villa","DF",20.2,0,0.122,0.122,1
+"Conor Gallagher","Chelsea","MF",34.8,0.087,0.035,0.122,2
+"Tomáš Souček","West Ham United","MF",31.9,0.07,0.051,0.121,2
+"Ryan Yates","Nottingham Forest","MF",22.1,0.055,0.066,0.121,2
+"Bernardo Silva","Manchester City","MF,FW",28.6,0.057,0.061,0.119,2.33333333333333
+"Jean-Philippe Mateta","Crystal Palace","FW",25.4,0.118,0.001,0.119,3
+"Carlton Morris","Luton Town","FW,MF",31.8,0.138,-0.019,0.118,2.66666666666667
+"Brennan Johnson","Tottenham Hotspur","FW",23.2,0.145,-0.03,0.115,3
+"Jarrad Branthwaite","Everton","DF",34.6,0.002,0.113,0.115,1
+"Rúben Dias","Manchester City","DF",28.4,-0.012,0.126,0.114,1
+"Joachim Andersen","Crystal Palace","DF",37.9,0.009,0.104,0.113,1
+"Jayden Bogle","Sheffield United","DF",31,0.067,0.046,0.113,1
+"Odsonne Édouard","Crystal Palace","FW,MF",17.3,0.145,-0.033,0.112,2.66666666666667
+"Joško Gvardiol","Manchester City","DF",25.9,0.017,0.092,0.109,1
+"Marcus Rashford","Manchester United","FW",25.2,0.141,-0.035,0.107,3
+"Dominik Szoboszlai","Liverpool","MF",23.4,0.073,0.031,0.104,2
+"Ryan Christie","Bournemouth","MF",32.3,0.049,0.055,0.104,2
+"Enzo Fernández","Chelsea","MF",24.5,0.074,0.028,0.102,2
+"Ivan Toney","Brentford","FW",16.1,0.145,-0.044,0.101,3
+"Bryan Mbeumo","Brentford","FW",21.8,0.122,-0.021,0.1,3
+"Keane Lewis-Potter","Brentford","FW,DF",16,0.139,-0.039,0.1,2.33333333333333
+"Moisés Caicedo","Chelsea","MF",31.8,0.01,0.088,0.098,2
+"Zeki Amdouni","Burnley","FW",21.7,0.11,-0.012,0.098,3
+"Matty Cash","Aston Villa","DF",23.8,0.055,0.04,0.095,1
+"James Maddison","Tottenham Hotspur","MF",23.7,0.112,-0.017,0.095,2
+"Scott McTominay","Manchester United","MF,FW",21.1,0.091,0.004,0.095,2.33333333333333
+"Pedro Porro","Tottenham Hotspur","DF",34.3,0.038,0.056,0.094,1
+"Marcus Tavernier","Bournemouth","FW",23.5,0.099,-0.005,0.094,3
+"Vinicius Souza","Sheffield United","MF",29.6,0.036,0.058,0.094,2
+"Pascal Groß","Brighton & Hove Albion","MF,DF",34.6,0.039,0.054,0.093,1.66666666666667
+"Douglas Luiz","Aston Villa","MF",33.3,0.045,0.043,0.089,2
+"Sam Johnstone","Crystal Palace","GK",20,-0.066,0.156,0.089,0
+"Eddie Nketiah","Arsenal","FW",12,0.115,-0.027,0.088,3
+"Nick Pope","Newcastle United","GK",14.9,-0.038,0.126,0.088,0
+"Callum Wilson","Newcastle United","FW",11,0.191,-0.103,0.088,3
+"Gustavo Hamer","Sheffield United","MF",32.3,0.062,0.026,0.088,2
+"Miguel Almirón","Newcastle United","FW",21.5,0.1,-0.013,0.087,3
+"Kaoru Mitoma","Brighton & Hove Albion","FW",16.5,0.132,-0.045,0.087,3
+"Kurt Zouma","West Ham United","DF",31.5,0.019,0.067,0.086,1
+"Matz Sels","Nottingham Forest","GK",16,-0.036,0.122,0.086,0
+"Vitaly Janelt","Brentford","MF,DF",33.9,0.032,0.053,0.085,1.66666666666667
+"Harry Maguire","Manchester United","DF",18.4,-0.003,0.086,0.084,1
+"Manuel Akanji","Manchester City","DF,MF",27.9,-0.031,0.112,0.082,1.33333333333333
+"Jordan Ayew","Crystal Palace","FW,MF",28.3,0.073,0.009,0.082,2.66666666666667
+"Trent Alexander-Arnold","Liverpool","DF",23.9,0.009,0.072,0.081,1
+"Mario Lemina","Wolverhampton Wanderers","MF",33,0.065,0.016,0.081,2
+"Alexis Mac Allister","Liverpool","MF",28.9,0.011,0.069,0.08,2
+"Danny Welbeck","Brighton & Hove Albion","FW,MF",18.8,0.1,-0.022,0.079,2.66666666666667
+"Ross Barkley","Luton Town","MF",29.1,0.068,0.009,0.077,2
+"Michael Olise","Crystal Palace","FW,MF",14.2,0.135,-0.059,0.076,2.66666666666667
+"Oliver McBurnie","Sheffield United","FW",14.2,0.131,-0.055,0.076,3
+"Pau Torres","Aston Villa","DF",27.4,-0.009,0.083,0.075,1
+"Rasmus Højlund","Manchester United","FW",24,0.114,-0.039,0.075,3
+"Marcos Senesi","Bournemouth","DF",24.9,-0.02,0.095,0.075,1
+"Lyle Foster","Burnley","FW,MF",21.1,0.102,-0.027,0.075,2.66666666666667
+"John McGinn","Aston Villa","MF,FW",33.3,0.052,0.021,0.073,2.33333333333333
+"João Palhinha","Fulham","MF",30,0.041,0.032,0.073,2
+"Teden Mengi","Luton Town","DF",27.4,-0.009,0.079,0.071,1
+"Cameron Archer","Sheffield United","FW,MF",20.4,0.102,-0.031,0.071,2.66666666666667
+"Diogo Dalot","Manchester United","DF",35.3,0.029,0.042,0.07,1
+"Dean Henderson","Crystal Palace","GK",18,-0.091,0.159,0.067,0
+"Wilson Odobert","Burnley","MF,FW",23.3,0.096,-0.029,0.067,2.33333333333333
+"Jacob Bruun Larsen","Burnley","MF,FW",13.9,0.14,-0.073,0.067,2.33333333333333
+"Mohammed Kudus","West Ham United","FW,MF",27.6,0.103,-0.037,0.066,2.66666666666667
+"Christian Nørgaard","Brentford","MF",27.8,0.034,0.032,0.066,2
+"Danilo","Nottingham Forest","MF",19.9,0.015,0.051,0.066,2
+"Hwang Hee-chan","Wolverhampton Wanderers","FW,MF",23.5,0.111,-0.046,0.065,2.66666666666667
+"Abdoulaye Doucouré","Everton","FW,MF",29.2,0.079,-0.014,0.065,2.66666666666667
+"Sander Berge","Burnley","MF",33.4,0.01,0.055,0.065,2
+"Harvey Elliott","Liverpool","MF,FW",15,0.094,-0.033,0.062,2.33333333333333
+"Benoît Badiashile","Chelsea","DF",14.9,-0.018,0.08,0.062,1
+"Jefferson Lerma","Crystal Palace","MF,DF",26.7,0.014,0.048,0.062,1.66666666666667
+"Kevin De Bruyne","Manchester City","MF",13.6,0.093,-0.035,0.058,2
+"Micky van de Ven","Tottenham Hotspur","DF",26,-0.008,0.066,0.057,1
+"Calvin Bassey","Fulham","DF",25.6,-0.039,0.094,0.055,1
+"Nayef Aguerd","West Ham United","DF",20.6,-0.017,0.071,0.054,1
+"Mykhailo Mudryk","Chelsea","FW",17.5,0.098,-0.044,0.053,3
+"Evan Ferguson","Brighton & Hove Albion","FW",15.2,0.101,-0.048,0.053,3
+"Kieran Trippier","Newcastle United","DF",24.8,-0.004,0.055,0.051,1
+"Kristoffer Ajer","Brentford","DF",20.4,0.01,0.04,0.051,1
+"Tyrick Mitchell","Crystal Palace","DF,MF",35.6,-0.001,0.048,0.047,1.33333333333333
+"James Garner","Everton","MF",33.4,0.014,0.033,0.047,2
+"Josh Brownhill","Burnley","MF",25,0.029,0.018,0.047,2
+"Marc Guéhi","Crystal Palace","DF",22.5,-0.04,0.086,0.045,1
+"Neco Williams","Nottingham Forest","DF",18.2,-0.009,0.053,0.045,1
+"Vitinho","Burnley","DF,MF",25.7,0.017,0.028,0.045,1.33333333333333
+"Kyle Walker","Manchester City","DF",30.7,-0.03,0.074,0.044,1
+"Philip Billing","Bournemouth","MF",15.5,0.049,-0.004,0.044,2
+"Antonee Robinson","Fulham","DF",36.3,-0.005,0.049,0.044,1
+"Ben Brereton","Sheffield United","FW,MF",12.3,0.121,-0.077,0.044,2.66666666666667
+"Lucas Digne","Aston Villa","DF",26.8,0.022,0.019,0.041,1
+"Neal Maupay","Brentford","FW",14.7,0.114,-0.072,0.041,3
+"Destiny Udogie","Tottenham Hotspur","DF",26.6,-0.008,0.048,0.04,1
+"Toti Gomes","Wolverhampton Wanderers","DF",30.8,-0.011,0.051,0.04,1
+"Dwight McNeil","Everton","MF,FW",32.1,0.04,0,0.04,2.33333333333333
+"Milos Kerkez","Bournemouth","DF",21.9,-0.006,0.044,0.039,1
+"Chris Richards","Crystal Palace","DF,MF",23.3,-0.022,0.058,0.037,1.33333333333333
+"James Ward-Prowse","West Ham United","MF",33.3,0.035,0,0.035,2
+"Nicolás Domínguez","Nottingham Forest","MF,FW",16.6,0.02,0.015,0.035,2.33333333333333
+"Raúl Jiménez","Fulham","FW",15.5,0.099,-0.066,0.033,3
+"Alfie Doughty","Luton Town","DF",32.5,0.012,0.021,0.033,1
+"Chiedozie Ogbene","Luton Town","MF,DF",22.2,0.061,-0.028,0.033,1.66666666666667
+"James Mcatee","Sheffield United","MF,FW",20.2,0.063,-0.032,0.031,2.33333333333333
+"Nathan Aké","Manchester City","DF",22.7,-0.024,0.054,0.03,1
+"Lewis Cook","Bournemouth","MF",31,-0.025,0.055,0.03,2
+"Tosin Adarabioyo","Fulham","DF",18,-0.009,0.039,0.03,1
+"Emerson Palmieri","West Ham United","DF",34.9,0,0.028,0.029,1
+"Marc Cucurella","Chelsea","DF",19.8,0.001,0.027,0.028,1
+"Timothy Castagne","Fulham","DF",29.3,0,0.029,0.028,1
+"Alex Iwobi","Fulham","FW,MF",24.4,0.063,-0.035,0.028,2.66666666666667
+"Moussa Niakhate","Nottingham Forest","DF",16.2,-0.038,0.064,0.027,1
+"Levi Colwill","Chelsea","DF",20,0,0.026,0.026,1
+"Edson Álvarez","West Ham United","MF",26.4,-0.016,0.041,0.026,2
+"Pape Matar Sarr","Tottenham Hotspur","MF",23,0.025,0,0.025,2
+"Gabriel Osho","Luton Town","DF",20.5,-0.024,0.049,0.025,1
+"Elijah Adebayo","Luton Town","FW",15.8,0.103,-0.077,0.025,3
+"Joe Gomez","Liverpool","DF",19.8,-0.029,0.051,0.022,1
+"Malo Gusto","Chelsea","DF",19.5,0.016,0.006,0.022,1
+"Dango Ouattara","Bournemouth","FW,DF",13.7,0.055,-0.035,0.02,2.33333333333333
+"Vitaliy Mykolenko","Everton","DF",27.4,-0.005,0.026,0.02,1
+"Harry Toffolo","Nottingham Forest","DF",16.2,-0.026,0.044,0.018,1
+"Andreas Pereira","Fulham","MF",29,0.038,-0.022,0.016,2
+"Joelinton","Newcastle United","MF,FW",14.2,0.024,-0.009,0.015,2.33333333333333
+"Willian","Fulham","FW",22.8,0.05,-0.035,0.015,3
+"Oleksandr Zinchenko","Arsenal","DF",19.1,-0.059,0.073,0.014,1
+"Noni Madueke","Chelsea","FW",11.7,0.111,-0.097,0.014,3
+"João Gomes","Wolverhampton Wanderers","MF",29.4,0.006,0.007,0.013,2
+"Ibrahima Konaté","Liverpool","DF",17.5,-0.054,0.065,0.012,1
+"Antony","Manchester United","FW",14.7,0.086,-0.075,0.011,3
+"Mathias Jensen","Brentford","MF",24.5,-0.004,0.013,0.01,2
+"Taiwo Awoniyi","Nottingham Forest","FW",11.6,0.069,-0.059,0.01,3
+"Andrew Robertson","Liverpool","DF",18.8,-0.024,0.03,0.006,1
+"Josh Cullen","Burnley","MF",22.9,-0.025,0.031,0.006,2
+"Lucas Paquetá","West Ham United","FW,MF",29.1,0.024,-0.019,0.005,2.66666666666667
+"Yves Bissouma","Tottenham Hotspur","MF",23,-0.024,0.026,0.003,2
+"Nélson Semedo","Wolverhampton Wanderers","DF,MF",34.3,-0.018,0.019,0.001,1.33333333333333
+"Orel Mangala","Nottingham Forest","MF",17.4,-0.025,0.026,0.001,2
+"Jacob Murphy","Newcastle United","FW,DF",13.2,0.065,-0.065,0,2.33333333333333
+"Jack Harrison","Everton","MF,FW",24.6,0.018,-0.018,0,2.33333333333333
+"Vladimír Coufal","West Ham United","DF",34.8,-0.026,0.026,-0.001,1
+"Michail Antonio","West Ham United","FW",18.8,0.065,-0.066,-0.001,3
+"Clément Lenglet","Aston Villa","DF",12.8,-0.061,0.058,-0.003,1
+"Kobbie Mainoo","Manchester United","MF",21.4,-0.014,0.01,-0.004,2
+"Ola Aina","Nottingham Forest","DF",18.8,-0.033,0.027,-0.005,1
+"Pablo Sarabia","Wolverhampton Wanderers","MF,FW",19.4,0.056,-0.061,-0.006,2.33333333333333
+"Wataru Endo","Liverpool","MF",19.1,-0.051,0.044,-0.008,2
+"Billy Gilmour","Brighton & Hove Albion","MF",23.6,-0.032,0.024,-0.008,2
+"Harry Wilson","Fulham","FW",18,0.043,-0.051,-0.008,3
+"Charlie Taylor","Burnley","DF",25.9,-0.032,0.023,-0.008,1
+"Raphaël Varane","Manchester United","DF",15.3,-0.063,0.054,-0.009,1
+"Konstantinos Mavropanos","West Ham United","DF",16.7,-0.042,0.033,-0.009,1
+"Tim Ream","Fulham","DF",16.7,-0.072,0.063,-0.009,1
+"Rayan Aït-Nouri","Wolverhampton Wanderers","DF,MF",25.9,0.009,-0.018,-0.009,1.33333333333333
+"Ben Mee","Brentford","DF",14.1,-0.046,0.036,-0.009,1
+"Beto","Everton","FW",10.6,0.117,-0.127,-0.01,3
+"Pedro Neto","Wolverhampton Wanderers","FW,MF",16.8,0.066,-0.078,-0.012,2.66666666666667
+"Amadou Onana","Everton","MF",23.2,-0.007,-0.005,-0.012,2
+"Carlos Baleba","Brighton & Hove Albion","MF",14.7,-0.039,0.025,-0.013,2
+"Tahith Chong","Luton Town","MF,FW",22,0.019,-0.033,-0.014,2.33333333333333
+"Jonny Evans","Manchester United","DF",15.5,-0.075,0.06,-0.015,1
+"Joel Ward","Crystal Palace","DF",22,-0.058,0.042,-0.016,1
+"Jordan Beyer","Burnley","DF",13.7,-0.076,0.06,-0.016,1
+"Reece Burke","Luton Town","DF",18.4,-0.037,0.019,-0.018,1
+"Adam Smith","Bournemouth","DF",23.9,-0.053,0.034,-0.019,1
+"Issa Diop","Fulham","DF",15.8,-0.086,0.066,-0.02,1
+"Mads Roerslev","Brentford","DF",22.1,-0.029,0.008,-0.021,1
+"Aaron Wan-Bissaka","Manchester United","DF",19.8,-0.05,0.027,-0.023,1
+"Will Hughes","Crystal Palace","MF",21,-0.055,0.031,-0.024,2
+"Frank Onyeka","Brentford","MF",12.9,0.009,-0.033,-0.024,2
+"Idrissa Gana Gueye","Everton","MF",20.9,-0.019,-0.006,-0.026,2
+"Youri Tielemans","Aston Villa","MF,FW",18,-0.021,-0.01,-0.031,2.33333333333333
+"Lewis Miley","Newcastle United","MF",13.4,-0.01,-0.022,-0.031,2
+"Lloyd Kelly","Bournemouth","DF",17.3,-0.068,0.037,-0.031,1
+"Facundo Buonanotte","Brighton & Hove Albion","FW,MF",15.2,0.007,-0.04,-0.033,2.66666666666667
+"Jack Grealish","Manchester City","FW,MF",11.2,0.016,-0.05,-0.034,2.66666666666667
+"Valentino Livramento","Newcastle United","DF",14.6,-0.044,0.01,-0.034,1
+"Joël Veltman","Brighton & Hove Albion","DF",17.6,-0.051,0.016,-0.034,1
+"Ryan Gravenberch","Liverpool","MF",12.5,-0.003,-0.032,-0.035,2
+"Pierre Højbjerg","Tottenham Hotspur","MF",14.6,-0.041,0.006,-0.035,2
+"Jamaal Lascelles","Newcastle United","DF",12,-0.051,0.016,-0.035,1
+"Ashley Young","Everton","DF,MF",25.3,-0.05,0.014,-0.036,1.33333333333333
+"Oliver Norwood","Sheffield United","MF",16,-0.036,-0.001,-0.036,2
+"Takehiro Tomiyasu","Arsenal","DF",12.8,-0.061,0.025,-0.037,1
+"Jarell Quansah","Liverpool","DF",13.2,-0.079,0.039,-0.04,1
+"Igor","Brighton & Hove Albion","DF",18.2,-0.069,0.028,-0.041,1
+"Bobby Reid","Fulham","FW",15.8,0.026,-0.068,-0.041,3
+"Maxime Estève","Burnley","DF",14.5,-0.086,0.04,-0.046,1
+"Boubacar Kamara","Aston Villa","MF",18.4,-0.052,0.002,-0.049,2
+"Jeffrey Schlupp","Crystal Palace","FW,MF",15,-0.008,-0.042,-0.049,2.66666666666667
+"Daniel Muñoz","Crystal Palace","DF,MF",16,-0.048,-0.001,-0.049,1.33333333333333
+"Ben Davies","Tottenham Hotspur","DF",12.1,-0.058,0.007,-0.051,1
+"Victor Lindelöf","Manchester United","DF",14.8,-0.05,-0.001,-0.052,1
+"Mateo Kovačić","Manchester City","MF",17.2,-0.061,0.007,-0.054,2
+"Adam Webster","Brighton & Hove Albion","DF",12.7,-0.086,0.031,-0.054,1
+"Issa Kaboré","Luton Town","DF",19.2,-0.062,0.005,-0.057,1
+"Amari'i Bell","Luton Town","DF",19.1,-0.077,0.013,-0.064,1
+"Lorenz Assignon","Burnley","DF",13.7,-0.042,-0.022,-0.064,1
+"Curtis Jones","Liverpool","MF",13,-0.029,-0.038,-0.067,2
+"Pervis Estupiñán","Brighton & Hove Albion","DF",13.8,-0.045,-0.023,-0.067,1
+"Elliot Anderson","Newcastle United","MF,FW",11.4,-0.002,-0.071,-0.073,2.33333333333333
+"Emerson","Tottenham Hotspur","DF",12.9,-0.084,0.007,-0.077,1
+"Tom Lockyer","Luton Town","DF",13,-0.075,-0.005,-0.08,1
+"Jordan Clark","Luton Town","MF",14.5,-0.022,-0.064,-0.085,2
+"Sergio Reguilón","Brentford","DF",12.4,-0.071,-0.014,-0.086,1
+"Ameen Al-Dakhil","Burnley","DF",11.7,-0.079,-0.008,-0.088,1
+"Ibrahim Sangaré","Nottingham Forest","MF",11.5,-0.077,-0.011,-0.089,2
+"Alex Scott","Bournemouth","MF",11.3,-0.062,-0.032,-0.093,2
+"Mathias Jørgensen","Brentford","DF",12.1,-0.061,-0.034,-0.096,1
+"Trevoh Chalobah","Chelsea","DF",10.6,-0.086,-0.011,-0.097,1
+"Jacob Brown","Luton Town","MF,FW",11.3,0.021,-0.118,-0.097,2.33333333333333
+"Tom Cairney","Fulham","MF",16.5,-0.054,-0.051,-0.105,2
+"Álex Moreno","Aston Villa","DF",11.5,-0.045,-0.066,-0.111,1
+"Albert Sambi Lokonga","Luton Town","MF",14.5,-0.081,-0.03,-0.111,2
+"Jóhann Berg Guðmundsson","Burnley","MF,FW",13.2,-0.036,-0.076,-0.111,2.33333333333333
+"Ben Osborn","Sheffield United","DF,MF",15.2,-0.069,-0.043,-0.112,1.33333333333333
+"Matt Doherty","Wolverhampton Wanderers","DF,MF",12.8,-0.049,-0.065,-0.113,1.33333333333333
+"Nathaniel Clyne","Crystal Palace","DF",14.9,-0.093,-0.021,-0.114,1
+"Ben Godfrey","Everton","DF",12.4,-0.075,-0.039,-0.114,1
+"Saša Lukić","Fulham","MF",12.5,-0.067,-0.051,-0.118,2
+"Luca Koleosho","Burnley","MF,FW",10.8,0.008,-0.127,-0.118,2.33333333333333
+"John Stones","Manchester City","DF,MF",11.8,-0.128,0.008,-0.119,1.33333333333333
+"Rodrigo Bentancur","Tottenham Hotspur","MF",11.2,-0.056,-0.064,-0.119,2
+"Jakub Kiwior","Arsenal","DF",10.5,-0.115,-0.004,-0.12,1
+"Pelly Ruddock Mpanzu","Luton Town","MF",12.2,-0.085,-0.039,-0.124,2
+"Max Aarons","Bournemouth","DF",13.7,-0.092,-0.033,-0.125,1
+"Adam Wharton","Crystal Palace","MF",14.4,-0.103,-0.023,-0.126,2
+"Harrison Reed","Fulham","MF",14.7,-0.086,-0.04,-0.126,2
+"Tommy Doyle","Wolverhampton Wanderers","MF",13.6,-0.079,-0.048,-0.127,2
+"George Baldock","Sheffield United","DF",10.8,-0.11,-0.034,-0.144,1
+"Andros Townsend","Luton Town","MF,FW",13.4,-0.04,-0.105,-0.145,2.33333333333333
+"Christian Eriksen","Manchester United","MF",12.7,-0.077,-0.075,-0.152,2
+"Luke Shaw","Manchester United","DF",10.7,-0.126,-0.036,-0.162,1
+"Andre Brooks","Sheffield United","MF,DF",10.4,-0.068,-0.102,-0.169,1.66666666666667
+"Luke Thomas","Sheffield United","DF",10.2,-0.095,-0.075,-0.17,1
+"Jean-Ricner Bellegarde","Wolverhampton Wanderers","MF,FW",10.6,-0.053,-0.119,-0.172,2.33333333333333
+"Emil Krafth","Newcastle United","DF",10.1,-0.105,-0.069,-0.174,1
+"Marvelous Nakamba","Luton Town","MF",12.6,-0.109,-0.066,-0.175,2
+"Oliver Arblaster","Sheffield United","MF",10.5,-0.116,-0.059,-0.176,2
+"Jorginho","Arsenal","MF",10.2,-0.169,-0.008,-0.177,2
+"Sofyan Amrabat","Manchester United","MF,DF",10.4,-0.143,-0.044,-0.187,1.66666666666667
+"Cheick Doucouré","Crystal Palace","MF",10.2,-0.134,-0.072,-0.205,2
+"Tariq Lamptey","Brighton & Hove Albion","DF,FW",10.2,-0.115,-0.092,-0.208,1.66666666666667
+"Nathan Patterson","Everton","DF",11.2,-0.146,-0.086,-0.232,1
