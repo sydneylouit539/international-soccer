@@ -2,7 +2,7 @@
 library(arm)
 
 fifa <- read.csv('https://raw.githubusercontent.com/martj42/international_results/master/results.csv')
-fifa <- fifa[fifa$date > '2022-08-01', ]
+fifa <- fifa[(fifa$date > '2020-01-01' & fifa$date < '2024-06-01'), ]
 
 newfifa <- rbind(fifa, fifa)
 p <- nrow(fifa)
@@ -13,6 +13,94 @@ newfifa$type <- 0
 newfifa$type[1:p] <- ifelse(fifa$neutral == F, 1, 0.5)
 newfifa$type[p + (1:p)] <- ifelse(fifa$neutral == F, 0, 0.5)
 newfifa <- newfifa[, -(7:9)]
+
+## Additional data cleaning ----------------------------------------------------
+
+uefa <- c('Albania', 'Andorra', 'Armenia', 'Austria', 'Azerbaijan', 
+          'Belarus', 'Belgium', 'Bosnia and Herzegovina', 'Bulgaria', 'Croatia',
+          'Cyprus', 'Czech Republic', 'Denmark', 'England', 
+          'Estonia', 'Faroe Islands', 'Finland', 'France', 'Georgia',
+          'Germany', 'Gibraltar', 'Greece', 'Hungary', 'Iceland', 
+          'Israel', 'Italy', 'Kazakhstan', 'Kosovo', 'Latvia', 'Liechtenstein', 
+          'Lithuania', 'Malta', 'Moldova', 'Montenegro', 'Netherlands', 
+          'North Macedonia', 'Northern Ireland', 'Norway', 'Poland', 'Portugal', 
+          'Republic of Ireland', 'Romania', 'Russia', 'San Marino', 'Scotland', 'Serbia', 
+          'Slovakia', 'Spain', 'Sweden', 'Switzerland', 'Turkey', 'Ukraine', 'Wales')
+conmebol <- c('Argentina', 'Bolivia', 'Brazil', 'Chile', 'Colombia',
+              'Ecuador', 'Paraguay', 'Peru', 'Uruguay', 'Venezuela')
+concacaf <- c('Canada', 'Mexico', 'United States', 'Belize', 'Costa Rica', 
+              'El Salvador', 'Guatemala', 'Honduras', 'Nicaragua', 'Panama',
+              'Anguilla', 'Antigua and Barbuda', 'Aruba', 'Bahamas', 'Barbados',
+              'Bermuda', 'Bonaire', 'British Virgin Islands', 'Cayman Islands',
+              'Cuba', 'Curacao', 'Dominica', 'Dominican Republic', 
+              'French Guiana', 'Grenada', 'Guadeloupe', 'Guyana', 'Haiti', 
+              'Jamaica', 'Martinique', 'Montserrat', 'Puerto Rico', 
+              'Saint Kitts and Nevis', 'Saint Lucia', 'Saint Martin', 
+              'Saint Vincent and the Grenadines', 'Sint Maarten', 'Suriname',
+              'Trinidad and Tobago', 'Turks and Caicos Islands', 
+              'U.S. Virgin Islands')
+afc <- c('Australia', 'Brunei', 'Cambodia', 'East Timor', 'Indonesia', 'Laos',
+         'Malaysia', 'Myanmar', 'Philippines', 'Singapore', 'Thailand', 
+         'Viet Nam', 'Afghanistan', 'Iran', 'Kyrgyzstan', 'Tajikistan', 
+         'Turkmenistan', 'Uzbekistan', 'China PR', 'Taiwan', 'North Korea', 
+         'Guam', 'Hong Kong', 'Japan', 'South Korea', 'Macau', 'Mongolia', 
+         'Northern Mariana Islands', 'Bangladesh', 'Bhutan', 'India', 
+         'Maldives', 'Nepal', 'Pakistan', 'Sri Lanka', 'Bahrain', 'Iraq', 
+         'Jordan', 'Kuwait', 'Lebanon', 'Oman', 'Palestine', 'Qatar', 
+         'Saudi Arabia', 'Syria', 'United Arab Emirates', 'Yemen')
+ofc <- c('American Samoa', 'Cook Islands', 'Fiji', 'New Caledonia', 
+         'New Zealand', 'Papua New Guinea', 'Samoa', 'Solomon Islands', 
+         'Tahiti', 'Tonga', 'Vanuatu')
+caf <- c('Algeria', 'Egypt', 'Libya', 'Morocco', 'Tunisia', 'Benin', 
+         'Burkina Faso', 'Cape Verde', 'Gambia', 'Ghana', 'Guinea', 
+         'Guinea-Bissau', 'Ivory Coast', 'Liberia', 'Mali', 'Mauritania', 
+         'Niger', 'Nigeria', 'Senegal', 'Togo', 'Cameroon', 
+         'Central African Republic', 'Chad', 'Congo', 'DR Congo', 
+         'Equatorial Guinea', 'Gabon', 'São Tomé and Príncipe', 'Burundi',
+         'Djibouti', 'Eritrea', 'Ethiopia', 'Kenya', 'Rwanda', 'Somalia', 
+         'South Sudan', 'Sudan', 'Tanzania', 'Uganda', 'Angola', 'Botswana', 
+         'Comoros', 'Eswatini', 'Lesotho', 'Madagascar', 'Malawi', 'Mauritius', 
+         'Mozambique', 'Namibia', 'Seychelles', 'South Africa', 'Zambia', 
+         'Zimbabwe')
+
+newfifa$team_conf <- ifelse(newfifa$team %in% uefa, 'UEFA',
+                    ifelse(newfifa$team %in% conmebol, 'CONMEBOL',
+                    ifelse(newfifa$team %in% concacaf, 'CONCACAF', 
+                    ifelse(newfifa$team %in% afc, 'AFC',
+                    ifelse(newfifa$team %in% ofc, 'OFC',
+                    ifelse(newfifa$team %in% caf, 'CAF', ''))))))
+
+newfifa$opponent_conf <- ifelse(newfifa$opponent %in% uefa, 'UEFA',
+                        ifelse(newfifa$opponent %in% conmebol, 'CONMEBOL',
+                        ifelse(newfifa$opponent %in% concacaf, 'CONCACAF', 
+                        ifelse(newfifa$opponent %in% afc, 'AFC',
+                        ifelse(newfifa$opponent %in% ofc, 'OFC',
+                        ifelse(newfifa$opponent %in% caf, 'CAF', ''))))))
+newfifa <- newfifa[(newfifa$team_conf != '' & newfifa$opponent_conf != ''), ]
+newfifa <- newfifa[which(!is.na(newfifa$team_score)), ]
+
+newfifa$weight <- ifelse(newfifa$tournament == 'Friendly', 0.5, 
+                  ifelse(grepl('qualification', newfifa$tournament), 0.8, 1)) *
+  exp(-as.numeric(as.Date(max(newfifa$date)) - as.Date(newfifa$date)) / 1000)
+
+model <- bayesglm(team_score ~ team + opponent + type,# + team_conf + opponent_conf,
+                  family = 'poisson', data = newfifa, prior.mean = 0, 
+                  weights = weight, prior.scale = 1, prior.df = Inf)
+
+teams <- which(grepl('team', names(model$coefficients)))
+rank_df <- data.frame(
+  team = gsub('team', '', names(model$coefficients[teams])),
+  offense = model$coefficients[teams],
+  defense = model$coefficients[teams + length(teams)]
+)
+rank_df$overall <- rank_df$offense - rank_df$defense
+View(rank_df)
+
+
+
+
+
+
 
 #exclude = c()
 #for(i in unique(newfifa$team)){
@@ -216,19 +304,19 @@ knockout_game <- function(teams, comp_matrix = competition_matrix){
 }
 
 
-knockout_bayes <- function(teams, n = 10000, rounds = 4){
+knockout_bayes <- function(teams, sim_ratings, n = 10000, rounds = 4){
   if (rounds==0){return(teams)}
   winner <- matrix(0, nrow = n, ncol = ncol(teams) / 2)
   for (i in 1:n){
     for (j in 1:(ncol(teams)/2)){
       winner[i, j] <- ifelse(
-        runif(1) < sim_game(jj[i, ], teams[i, 2 * j - 1],
-                            teams[i, 2 * j], knockout=TRUE,
+        runif(1) < sim_game(sim_ratings[i, ], teams[i, 2 * j - 1],
+                            teams[i, 2 * j], knockout = TRUE,
                             bayesian = TRUE)$prob_win,
         teams[i, 2 * j - 1], teams[i, 2 * j])
     }
   }
-  return(cbind(teams, knockout_bayes(winner, n = n, rounds = rounds - 1)))
+  return(cbind(teams, knockout_bayes(winner, sim_ratings, n = n, rounds = rounds - 1)))
 }
 
 
@@ -258,62 +346,64 @@ qatar_2022 <- function(n = 1e4, bayesian = FALSE){
 }
 
 ## Frequentist model------------------------------------------------------------
-nteams <- length(which(substr(colnames(X), 1, 4) == 'team'))
-team <- newfifa$team; opponent <- newfifa$opponent; type <- newfifa$type
+#nteams <- length(which(substr(colnames(X), 1, 4) == 'team'))
+#team <- newfifa$team; opponent <- newfifa$opponent; type <- newfifa$type
 ## Set matrix of predictors with dummy coding (Baseline=Albania)
-X <- as.matrix(cbind(1, model.matrix(~team - 1), 
-                     model.matrix(~opponent - 1), type))[, -c(2, nteams + 1)]
+#X <- as.matrix(cbind(1, model.matrix(~team - 1), 
+#                     model.matrix(~opponent - 1), type))[, -c(2, nteams + 1)]
 ## Fit model using Fisher scoring and zero vector as starting point (SLOW!)
-tt <- fisher_scoring(beta_0 = rep(0, ncol(X)), 
-                     y = newfifa$team_score, X = X, family = 'poisson')
+#tt <- fisher_scoring(beta_0 = rep(0, ncol(X)), 
+#                     y = newfifa$team_score, X = X, family = 'poisson')
 ## Make sure the coefficient estimates are equal to the glm() function
-fifa_model <- glm(team_score ~ team + opponent + type, 
-                  data = newfifa, family = 'poisson')
-all.equal(unname(tt$coefficients$Estimate), unname(fifa_model$coefficients))
+#fifa_model <- glm(team_score ~ team + opponent + type, 
+#                  data = newfifa, family = 'poisson')
+#all.equal(unname(tt$coefficients$Estimate), unname(fifa_model$coefficients))
 
 ## Bayesian model---------------------------------------------------------------
-prior_means <- rep(0, 2 * nteams - 1)
+#prior_means <- rep(0, 2 * nteams - 1)
 ## Set World Cup team prior means to 0.5 (Better than average)
-prior_means[which(substr(colnames(X), 5, 100) %in% worldcupteams) - 1] <- 0.5 
+#prior_means[which(substr(colnames(X), 5, 100) %in% worldcupteams) - 1] <- 0.5 
 ## Set World Cup opponent means to -0.5 (harder to beat than average team)
-prior_means[which(substr(colnames(X), 9, 100) %in% worldcupteams) - 1] <- -0.5 
-prior_means[length(prior_means)] <- 0.3 #Home team advantage
-gelman <- bayesglm(team_score ~ team + opponent + type, family = 'poisson',
-                  data = newfifa, prior.mean = prior_means, 
-                  prior.scale = 1, prior.df = Inf)
-jj <- coef(sim(gelman, 100000))
+#prior_means[which(substr(colnames(X), 9, 100) %in% worldcupteams) - 1] <- -0.5 
+#prior_means[length(prior_means)] <- 0.3 #Home team advantage
+#gelman <- bayesglm(team_score ~ team + opponent + type, family = 'poisson',
+#                  data = newfifa, prior.mean = prior_means, 
+#                  prior.scale = 1, prior.df = Inf)
+#jj <- coef(sim(gelman, 100000))
+
+
 
 
 ## SIMULATIONS------------------------------------------------------------------
 
 #BAYESIAN SIMULATION (Takes about 8s per 1000 simulations)
-x <- qatar_2022(n = 1e5, bayesian = TRUE)
-champs <- data.frame(Team = worldcupteams, Knockout = 0, Quarterfinal = 0,
-                     Semifinal = 0, Final = 0, Champion = 0)
-for(i in 1:32){
-  champs$Knockout[i] <- length(which(x[, 1:16] == worldcupteams[i]))
-  champs$Quarterfinal[i] <- length(which(x[, 17:24] == worldcupteams[i]))
-  champs$Semifinal[i] <- length(which(x[, 25:28] == worldcupteams[i]))
-  champs$Final[i] <- length(which(x[, 29:30] == worldcupteams[i]))
-  champs$Champion[i] <- length(which(x[, 31] == worldcupteams[i]))
-}
-champs <- champs[order(champs$Champion, decreasing = TRUE), ]
-rownames(champs) <- NULL; champs
+#x <- qatar_2022(n = 1e5, bayesian = TRUE)
+#champs <- data.frame(Team = worldcupteams, Knockout = 0, Quarterfinal = 0,
+#                     Semifinal = 0, Final = 0, Champion = 0)
+#for(i in 1:32){
+#  champs$Knockout[i] <- length(which(x[, 1:16] == worldcupteams[i]))
+#  champs$Quarterfinal[i] <- length(which(x[, 17:24] == worldcupteams[i]))
+#  champs$Semifinal[i] <- length(which(x[, 25:28] == worldcupteams[i]))
+#  champs$Final[i] <- length(which(x[, 29:30] == worldcupteams[i]))
+#  champs$Champion[i] <- length(which(x[, 31] == worldcupteams[i]))
+#}
+#champs <- champs[order(champs$Champion, decreasing = TRUE), ]
+#rownames(champs) <- NULL; champs
 
 
 #FREQUENTIST SIMULATION (Takes about 0.3s per 1000 simulations)
-x <- qatar_2022(n = 1e5)
-champs <- data.frame(Team = worldcupteams, Knockout = 0, Quarterfinal = 0,
-                    Semifinal = 0, Final = 0, Champion = 0)
-for(i in 1:32){
-  champs$Knockout[i] <- length(which(x[, 1:16] == worldcupteams[i]))
-  champs$Quarterfinal[i] <- length(which(x[, 17:24] == worldcupteams[i]))
-  champs$Semifinal[i] <- length(which(x[, 25:28] == worldcupteams[i]))
-  champs$Final[i] <- length(which(x[, 29:30] == worldcupteams[i]))
-  champs$Champion[i] <- length(which(x[, 31] == worldcupteams[i]))
-}
-champs <- champs[order(champs$Champion, decreasing = TRUE), ]
-rownames(champs) <- NULL; champs
+#x <- qatar_2022(n = 1e5)
+#champs <- data.frame(Team = worldcupteams, Knockout = 0, Quarterfinal = 0,
+#                    Semifinal = 0, Final = 0, Champion = 0)
+#for(i in 1:32){
+#  champs$Knockout[i] <- length(which(x[, 1:16] == worldcupteams[i]))
+#  champs$Quarterfinal[i] <- length(which(x[, 17:24] == worldcupteams[i]))
+#  champs$Semifinal[i] <- length(which(x[, 25:28] == worldcupteams[i]))
+#  champs$Final[i] <- length(which(x[, 29:30] == worldcupteams[i]))
+#  champs$Champion[i] <- length(which(x[, 31] == worldcupteams[i]))
+#}
+#champs <- champs[order(champs$Champion, decreasing = TRUE), ]
+#rownames(champs) <- NULL; champs
 
 
 
